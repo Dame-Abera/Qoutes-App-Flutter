@@ -1,6 +1,5 @@
 import "dart:convert";
 import "package:flutter/material.dart";
-import "package:quotesapp/screen/second_screen.dart";
 import 'package:http/http.dart' as http;
 
 class HomeScreen extends StatefulWidget {
@@ -44,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 print(data);
 
                 setState(() {
+                  
                   quote = data[0]["q"];
                   author = data[0]["a"];
                 });
